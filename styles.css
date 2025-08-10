@@ -1,0 +1,93 @@
+:root {
+  /* Styles defined in style-guide.md*/
+  --main-bg: hsl(47, 88%, 63%);
+  --card-bg: hsl(0, 0%, 100%);
+  --text-accent: hsl(0, 0%, 42%);
+  --text-main: hsl(0, 0%, 7%);
+
+  --box-shadow-bg: hsl(0, 0%, 7%);
+
+  --text-md: 1rem;
+
+  --font-medium: 500;
+  --font-extra-bold: 800;
+}
+
+body {
+  background-color: var(--main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Figtree;
+}
+
+.card {
+  max-width: 350px;
+  background-color: var(--card-bg);
+
+  padding: 0.85rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: justify-start;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  box-shadow: 0.32rem 0.32rem 0 0 black;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 0.85rem;
+}
+
+.header-title {
+  letter-spacing: 0.02rem;
+  cursor: pointer;
+}
+
+.header-subtitle {
+  font-weight: var(--font-medium);
+  color: var(--text-main);
+}
+
+.img-wrapper,
+#illustration-article {
+  border-radius: 0.5rem;
+}
+
+#illustration-article {
+  width: 100%;
+}
+
+.header-title {
+  background-color: var(--main-bg);
+  color: var(--text-main);
+  font-weight: var(--font-extra-bold);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: min-content;
+  margin: 0;
+}
+
+.card-body-header > h1:hover {
+  cursor: pointer;
+  color: var(--main-bg);
+}
+
+.card-body-content-text {
+  color: var(--text-accent);
+  font-weight: var(--font-medium);
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.author {
+  font-weight: var(--font-extra-bold);
+  font-size: 0.85rem;
+}
